@@ -1,0 +1,38 @@
+{
+  "mappings" : {
+    "event" : {
+      "_all": {
+        "enabled": false
+      },
+      "properties" : {
+        "location" : {
+          "type" : "geo_point"
+        },
+        "magnitude" : {
+          "type" : "float"
+        },
+        "place" : {
+          "type" : "text"
+        },
+        "significance" : {
+          "type" : "long"
+        },
+        "tags" : {
+          "type" : "keyword"
+        },
+        "time" : {
+          "type" : "date"
+        },
+        "title" : {
+          "type" : "text"
+        },
+        "updated" : {
+          "type" : "date"
+        },
+        "url" : {
+          "type" : "keyword"
+        }
+      }
+    }
+  }
+}
