@@ -1,10 +1,16 @@
 {
   "mappings" : {
     "event" : {
-      "_all": {
-        "enabled": false
-      },
       "properties" : {
+        "dayOfWeek": {
+          "type": "keyword"
+        },
+        "hourOfDay_str": {
+          "type": "keyword"
+        },
+        "hourOfDay_num": {
+          "type" : "integer"
+        },
         "location" : {
           "type" : "geo_point"
         },
